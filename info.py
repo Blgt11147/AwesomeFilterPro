@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '13239927'))
+API_HASH = environ.get('API_HASH', '7a3ed8adf3b6bbcbc2e9fad879a556a9')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5610699391:AAEEk3IZWVjUvGop0l-P11TsD77YTqZFz5M')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
@@ -31,8 +31,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_URI = environ.get('DATABASE_URI', ".mongodb+srv://Baljeetsingh:6398gill@cluster0.vl6qver.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Gillmoviesbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -71,6 +71,6 @@ if AUTO_DELETE == "True":
     AUTO_DELETE = True
 
 #Sample
-SHORTNER_SITE = ""
-SHORTNER_API = ""
+SHORTNER_SITE = "v2links.com"
+SHORTNER_API = "a0df38c0a818cc650079d3a7eadf09920c7cf0c5"
 
